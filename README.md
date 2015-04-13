@@ -1,6 +1,9 @@
-** Team Cereal Killers**
-** Ben Daschel, Josh Harshman, Jose Francisco Navarro, Tyler Herrin**
+**Team Cereal Killers**
+
+**Ben Daschel, Josh Harshman, Jose Francisco Navarro, Tyler Herrin**
+
 **CS 349 Spring 2015**
+
 **Homework 3**
 
 ## About
