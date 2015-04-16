@@ -1,21 +1,22 @@
 /**
  * Created by voodoo on 4/14/15.
+ * Star decorator can only have one instance of itself
  */
 public class Star extends TreeDecorator {
     Tree tree;
-    protected static Star instance = null;
+    protected static Tree instance = null;
     protected Star(Tree tree) {
         this.tree = tree;
     }
 
-    public static Star getInstance(Tree tree) {
+    public static Tree getInstance(Tree tree) {
         if(instance == null) {
-            instance = new Star(tree);
+            return instance = new Star(tree);
         }
         else
             System.out.println("Can only have once instance of star!");
 
-        return instance;
+        return tree;
     }
 
     public String getDescription() {
