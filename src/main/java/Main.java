@@ -16,6 +16,9 @@ public class Main {
         Tree t = new DouglasFir();
         t = new Ruffles(t);
         t = new BallsRed(t);
+        t = Star.addStar(t);
+        t = new BallsRed(t);
+        t = Star.addStar(t);
 
         System.out.println("Price: " + t.getPrice());
         System.out.println(t.getDescription());
