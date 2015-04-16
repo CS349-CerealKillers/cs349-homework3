@@ -1,18 +1,11 @@
 /**
- * Created by Benjamin Daschel on 4/13/15.
+ * Created by Benjamin Daschel on 4/15/15.
  */
-public interface Decorator<T> {
+public abstract class Decorator<T> {
 
-    /**
-     *
-     * @return the object which this is decorating
-     */
-    public T getDecorated();
+    protected T decorated;
 
-    /**
-     *
-     * @param decorated object to be decorated
-     * @return the decorated object
-     */
-    public T decorate(T decorated);
+    public Decorator(T decorated){
+        this.decorated = decorated;
+    }
 }

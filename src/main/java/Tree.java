@@ -1,17 +1,17 @@
 /**
  * Created by Benjamin Daschel on 4/13/15.
  */
-public abstract class Tree {
+public interface Tree {
 
     /**
      *
      * @return the price for this individual component
      */
-    public abstract double getPrice();
+    public double getPrice();
 
     /**
      *
-     * @return the total price for the object with all decorations
+     * @return a human readable description of the tree
      */
-    public abstract double getTotal();
+    public String getDescription();
 }

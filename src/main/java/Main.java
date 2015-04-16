@@ -12,5 +12,13 @@ public class Main {
         mytree = new Ruffles(mytree);
         printtree(mytree);
          */
+
+        Tree t = new DouglasFir();
+        t = new Ruffles(t);
+        t = new BallsRed(t);
+
+        System.out.println("Price: " + t.getPrice());
+        System.out.println(t.getDescription());
+
     }
 }

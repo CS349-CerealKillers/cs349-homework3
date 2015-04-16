@@ -1,20 +1,17 @@
 /**
- * Created by Benjamin Daschel on 4/13/15.
+ * Created by Benjamin Daschel on 4/15/15.
  */
-public abstract class TreeDecorator extends Tree implements Decorator<TreeDecorator>{
+public abstract class TreeDecorator extends Decorator<Tree> implements Tree{
 
-    private TreeDecorator decorated;
-
-    public abstract TreeDecorator getDecorated();
-
-    public TreeDecorator decorate(TreeDecorator decorated) {
-        this.decorated = decorated;
-        return this;
+    public TreeDecorator(Tree decorated) {
+        super(decorated);
     }
 
-    @Override
-    public double getTotal() {
-        return this.getPrice() + decorated.getTotal();
+    public double getPrice() {
+        return this.decorated.getPrice();
     }
 
+    public String getDescription() {
+        return this.decorated.getDescription();
+    }
 }
