@@ -4,14 +4,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        /*
-        Tree mytree = new BlueSpruce();
-        mytree = new Star(mytree);
-        mytree = new Ruffles(mytree);
-        mytree = new Star(mytree); //this is problematic!
-        mytree = new Ruffles(mytree);
-        printtree(mytree);
-         */
 
         Tree t = new DouglasFir();
         t = new Ruffles(t);
