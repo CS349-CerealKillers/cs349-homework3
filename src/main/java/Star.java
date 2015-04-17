@@ -1,5 +1,5 @@
 /**
- * Created by voodoo on 4/14/15.
+ * Created by jharshman on 4/14/15.
  * Star decorator can only have one instance of itself
  */
 public class Star extends TreeDecorator {
